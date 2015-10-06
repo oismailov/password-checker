@@ -1,0 +1,8 @@
+acme_password_checker:
+    resource: "@AcmePasswordCheckerBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
