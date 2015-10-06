@@ -36,6 +36,7 @@ Structure
 $ tree src/Acme/PasswordCheckerBundle/ - bundle(plugin) for password checker
 
 src/Acme/PasswordCheckerBundle/
+
 ├── AcmePasswordCheckerBundle.php
 
 ├── Controller
