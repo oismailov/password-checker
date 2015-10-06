@@ -23,6 +23,8 @@ $ php app/console doctrine:database:create - create DB
 
 $ php app/console doctrine:schema:update --force  - create DB Tables/Schema
 
+run sql query from file src/Acme/PasswordCheckerBundle/Resources/data/passwords.sql
+
 $ composer update - download/update all needed packages from composer.json
 
 $ php app/console ser:run - run project on local machine
@@ -35,32 +37,56 @@ $ tree src/Acme/PasswordCheckerBundle/ - bundle(plugin) for password checker
 
 src/Acme/PasswordCheckerBundle/
 ├── AcmePasswordCheckerBundle.php
-├── Controller
-│   ├── DefaultController.php
-│   ├── ExceptionController.php
-│   └── PasswordController.php
-├── DependencyInjection
-│   ├── AcmePasswordCheckerExtension.php
-│   └── Configuration.php
-├── Entity
-│   ├── PasswordChecker.php
-│   ├── PasswordChecker.php~
-│   └── PasswordCheckerRepository.php
-├── Helper
-│   ├── JsonHelper.php
-│   └── Validation.php
-├── Resources
-│   ├── config
-│   │   └── services.xml
-│   ├── data
-│   │   └── password_patterns.yml
-│   └── views
-│       └── Default
-│           └── index.html.twig
-└── Tests
-    └── Controller
-        └── DefaultControllerTest.php
 
+├── Controller
+
+│   ├── DefaultController.php
+
+│   ├── ExceptionController.php
+
+│   └── PasswordController.php
+
+├── DependencyInjection
+
+│   ├── AcmePasswordCheckerExtension.php
+
+│   └── Configuration.php
+
+├── Entity
+
+│   ├── PasswordChecker.php
+
+│   ├── PasswordChecker.php~
+
+│   └── PasswordCheckerRepository.php
+
+├── Helper
+
+│   ├── JsonHelper.php
+
+│   └── Validation.php
+
+├── Resources
+
+│   ├── config
+
+│   │   └── services.xml
+
+│   ├── data
+
+│   │   └── password_patterns.yml
+
+│   └── views
+
+│       └── Default
+
+│           └── index.html.twig
+
+└── Tests
+
+    └── Controller
+
+        └── DefaultControllerTest.php
 
 Controllers are located in  Controller directory.
 -----------------
@@ -73,7 +99,7 @@ Models are located in Entity directory.
 Password Checker model is in src/Acme/PasswordCheckerBundle/Entity/PasswordChecker.php
 
 Configuration - app/config
-
+-----------------
 
 How To Use
 -----------------
